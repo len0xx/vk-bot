@@ -4,14 +4,14 @@
 Вся подробная документация по использованию VK API для ботов [здесь](https://vk.com/dev/bots_docs)
 
 ## Файлы
-* config.php — функции VK API
-* data.php — данные для подключения к VK API и другие константы
-* handler.php — главный файл, который обрабатывает поступивший запрос
-* tron.php — функции для обработки текста
-* algorithms.php — файл с выполняемыми функциями
-* cases.php — файл, обрабатывающий полученное сообщение
+* [config.php](https://github.com/len0xx/vk-bot/blob/master/config.php) — функции VK API
+* [data.php](https://github.com/len0xx/vk-bot/blob/master/data.php) — данные для подключения к VK API и другие константы
+* [handler.php](https://github.com/len0xx/vk-bot/blob/master/handler.php) — главный файл, который обрабатывает поступивший запрос
+* [tron.php](https://github.com/len0xx/vk-bot/blob/master/tron.php) — функции для обработки текста
+* [algorithms.php](https://github.com/len0xx/vk-bot/blob/master/algorithms.php) — файл с выполняемыми функциями
+* [cases.php](https://github.com/len0xx/vk-bot/blob/master/cases.php) — файл, обрабатывающий полученное сообщение
 
-**Важно: Перед использованием бота ознакомьтесь с правилами: [Правила использования бота](https://vk.com/dev/bot_rules)**
+**Важно: Перед использованием бота ознакомьтесь с правилами ВКонтакте: [Правила использования бота](https://vk.com/dev/bot_rules)**
 
 ## 1. Создание токена
 Чтобы начать работу с чатботом ВКонтакте, Вам нужно создать специальный токен сообщества
