@@ -121,9 +121,10 @@ switch (BOT_MESSAGE_ATTACHMENT_TYPE) {
         elseif (has("and", ["сколько", "время"]) || has("and", ["сколько", "времени"])) tron_send("Сейчас " . curDate("time"));
         elseif (has("and", ["что", "ты", "умеешь"]) || has("and", ["что", "ты", "знаешь"])) tron_send("Пока что я умею немного — всего лишь отвечать на некоторые вопросы, например:", "", inlineKeyboard(["Сколько сейчас времени?", "Какая сегодня дата?"]));
         elseif (has("or", ["start", "начать"])) tron_send("Добро пожаловать, воспользуйся меню", "", getKeyboard("menu"));
-        elseif (has("and_uo", ["меню"]) && has("not", ["уменьшить", "увеличить"])) tron_send("Меню открыто:", "", getKeyboard("menu"));
+        elseif (has("and_uo", ["меню"]) && has("not", ["уменьшить", "увеличить", "обновить"])) tron_send("Меню открыто:", "", getKeyboard("menu"));
         elseif (has("and", ["уменьшить", "меню"])) tron_send("Меню было уменьшено:", "", getKeyboard("small_menu"));
         elseif (has("and", ["увеличить", "меню"])) tron_send("Полное меню:", "", getKeyboard("menu"));
+        elseif (has("and", ["обновить", "меню"])) tron_send("Меню обновлено:", "", getKeyboard("menu"));
         else {
             tron_send(getr_few($defaults, 1));
         }

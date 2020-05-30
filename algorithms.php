@@ -39,9 +39,8 @@ function getKeyboard($mode, $rel = array()) {
     switch ($mode) {
         case "menu":
             array_push($buttons, [buttonText("Что ты умеешь?", 'blue', ['command' => 'ask'])]);
-            array_push($buttons, [buttonText("Обновить меню", 'white', ['command' => 'menu']), buttonText("Уменьшить меню", 'white', ['command' => 'menu'])]);
-            array_push($buttons, [buttonLink("Узнать больше о космосе", "https://vk.me/lnx.space", ['command' => 'open_space'])]);
-            array_push($buttons, [buttonLink("Открыть на GitHub", "https://github.com/len0xx/vk-bot", ['command' => 'open_link'])]);
+            array_push($buttons, [buttonApp("QR-конструктор", 6899379, null, null, ['command' => 'open_app']), buttonLink("Открыть на GitHub", "https://github.com/len0xx/vk-bot", ['command' => 'open_link'])]);
+            array_push($buttons, [buttonText("Обновить меню", 'white', ['command' => 'menu'])]);
             return generateKeyboard($buttons);
         break;
 
